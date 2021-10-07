@@ -13,7 +13,7 @@ html {
 
 /* ------------------ */
 
-/* HERO/HEADER/NAV PAGE */
+/* HOME PAGE */
 
 /* ------------------ */
 
@@ -470,4 +470,138 @@ form .logo {
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 5px 0px 0px violet, 8px 0px 0px rgb(0, 217, 255);
+}
+
+/* ------------------ */
+
+/* MEDIA QUERIES */
+
+/* ------------------ */
+
+@media (max-width: 1024px) {
+    /* home page */
+    .text-box h1 {
+        font-size: 6em;
+    }
+    .text-box p {
+        font-size: 1.5em;
+    }
+    .socials a i {
+        font-size: 2.5em;
+    }
+    /* proj page */
+    .proj-div {
+        flex-direction: column;
+    }
+    .proj-div img {
+        width: 100%;
+    }
+    .project-text {
+        text-align: center;
+    }
+    .project-text .buttons {
+        justify-content: center;
+    }
+    /* about page */
+    #about .about-content {
+        width: 100%;
+    }
+    /* contact page */
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* home page */
+    .text-box h1 {
+        font-size: 4.5em;
+    }
+    .text-box p {
+        font-size: 1.5em;
+    }
+    .socials a i {
+        font-size: 2em;
+        margin: 0px 10px;
+    }
+    /* project page */
+    .project-text h2, p, .buttons {
+        padding: .25rem;
+    }
+}
+
+@media (max-width: 650px) {
+    /* home page */
+    #bars {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        padding: .5rem;
+    }
+    .nav-links li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    nav.nav-black {
+        background-color: black;
+    }
+    .nav-links a:not(#resume) {
+        color: white;
+    }
+    .nav-links a:not(#resume)::after {
+        background-color: transparent;
+    }
+    .nav-links a:not(#resume):hover::after {
+        width: 0%;
+    }
+    .nav-links #resume {
+        padding: 5px 10px;
+        border: 2px solid violet;
+        transition: 0.2s;
+        border-radius: 0%;
+    }
+    .nav-links li:not(#not):hover {
+        background-color: #1C1D21;
+    }
+    /* contact page */
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+    form .logo {
+        display: none;
+    }
+    form .info {
+        flex-direction: column;
+    }
+    form .info p {
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* home page */
+    .socials a i {
+        font-size: 2em;
+        margin: 0px 5px;
+    }
+    .border1 {
+        height: 8vh;
+    }
+    /* contact page */
+    #contact h1 {
+        font-size: 2rem;
+    }
 }
