@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- header/landing page -->
     <header>
         <nav id="nav">
             <p class="logo">ljv</p>
@@ -42,12 +43,12 @@
                 <a target="_blank" href="https://github.com/loganveik"><i class="fab fa-github"></i></a>
             </div>
             <h1>LOGAN VEIK</h1>
-            <!-- <div class="row"> -->
             <p>Fullstack Software Developer</p>
-            <!-- </div> -->
         </div>
     </header>
-    <div class="border1"></div>
+    <!-- border for bottom of header page with slant -->
+    <div class="border"></div>
+    <!-- about page -->
     <section id="about">
         <div class="about-content">
             <h4>About me</h4>
@@ -62,6 +63,7 @@
             </div>
         </div>
     </section>
+    <!-- projects page -->
     <section id="projects">
         <div class="proj-intro">
             <h1>PROJECTS</h1>
@@ -118,6 +120,36 @@
             </div>
         </div>
     </section>
+    <!-- contact page -->
+    <section id="contact">
+        <form action="https://formspree.io/f/mleazvvj" method="POST" id="my-form">
+            <div class="cover"></div>
+            <p class="logo">ljv</p>
+            <h4>Connect with me.</h4>
+            <div class="info">
+                <p><a href="mailto:jumpswervelogan@gmail.com">jumpswervelogan@gmail.com</a></p>
+                <p>(480)-826-5883</p>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <input name="name" id="name" type="text" required />
+                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                </div>
+                <div class="input-group">
+                    <input name="email" id="email" type="text" required />
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <textarea name="message" id="message" rows="2" required></textarea>
+                <label for="message"><i class="fas fa-comment"></i> Message</label>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="status"></div>
+        </form>
+    </section>
+    <!-- javascript link -->
+    <script src="./a.js"></script>
 </body>
 
 </html>

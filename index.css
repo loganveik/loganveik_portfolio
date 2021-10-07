@@ -308,3 +308,166 @@ nav .logo {
     display: flex;
     width: 100%;
 }
+
+/* ------------------ */
+
+/* CONTACT PAGE */
+
+/* ------------------ */
+
+#contact {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .contact-text h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    background-color: violet;
+    box-shadow: 10px 10px 0px black;
+    color: white;
+    margin: 2.5rem 0 0;
+}
+
+form {
+    width: 50%;
+    padding: 3rem 2rem 0;
+    margin: 3rem 0;
+    background-color: rgb(28, 28, 28);
+    position: relative;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 0.9);
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+}
+
+form #status {
+    color: white;
+    margin: 0 0 1rem;
+}
+
+.input-group {
+    margin: 0 0 2rem;
+    position: relative;
+}
+
+.row .input-group {
+    width: 45%;
+}
+
+form .row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(138, 143, 142);
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    resize: none;
+    transition: 0.2s;
+}
+
+input:focus~label, textarea:focus~label, input:valid~label, textarea:valid~label {
+    top: -20px;
+    font-size: 0.75rem;
+    color: white;
+}
+
+input:focus, textarea:focus, input:valid, textarea:valid {
+    border-bottom: 1px solid white;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: text;
+    padding: 10px;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(138, 143, 142);
+}
+
+button {
+    position: relative;
+    z-index: 1;
+    outline: none;
+    background-color: violet;
+    color: white;
+    width: 25%;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    border-radius: 50px;
+    border: 1px solid violet;
+    margin: 0 0 1rem;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+form h4 {
+    color: violet;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 45, 45);
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 90% 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 0 0 1rem;
+    width: 100%;
+}
+
+.info a, .info p {
+    color: white;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+form .logo {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    color: white;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 0px 0px violet, 8px 0px 0px rgb(0, 217, 255);
+}
