@@ -1,8 +1,8 @@
 # Logan Veik's Portfolio
 
 ### Links:
-Demo - [demo](https://loganveik.com)
-Repo - [repo](https://github.com/loganveik/loganveik_portfolio)
+[demo](https://loganveik.com)
+[repo](https://github.com/loganveik/loganveik_portfolio)
 
 ### Description:
 This is my official software developer portfolio website.
@@ -15,5 +15,5 @@ HTML5, CSS3, Javascript
 ![homepage](images/pss1.png)
 2) Projects Page
 ![projects](images/pss2.png)
-1) Contact Page
+3) Contact Page
 ![contact](images/pss3.png)
